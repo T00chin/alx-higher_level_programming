@@ -56,7 +56,7 @@ void print_python_bytes(PyObject *p)
 	printf("  first %ld bytes: ", size + 1);
 	if (size < 10)
 	{
-		for (Py_ssize_t i = 0; i <= size; i++)
+		for (i = 0; i <= size; i++)
 		{
 			printf("%02hhx", bytesData[i]);
 			if (i < size)
